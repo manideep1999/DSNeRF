@@ -168,16 +168,16 @@
 	<img src='docs/NSFresults/mix_dep.png' style="width:100%" >
 	</div>
         <p>
-<!-- 	     blah blah blah -->
+	    As the depth supervised loss is incorporated in the total loss, we observe a significant improvement in the depth maps on the right. 
 <!--             SRNs explain all 2D observations in 3D, leading to unsupervised, yet explicit, reconstruction of geometry jointly with
             appearance. Normal maps may visualize the reconstructed geometry and make SRNs fully interpretable.
             On the left, you can see the normal maps of the reconstructed
             geometry - note that these are learned fully unsupervised! In the center, you can see novel views generated
             by SRNs, and to the right, the ground-truth views. This model was trained on 50 2D observations each of ~2.5k cars in the Shapenet v2 dataset. -->
         </p>
+        <hr>
 
         <h2>Performance Evaluation</h2>
-        <hr>
 	<div class="column1">
 	<img src='docs/NSFresults/4cases_Plot1.png' style="width:100%" >
 	</div>
@@ -185,7 +185,8 @@
 	<img src='docs/NSFresults/4cases_Plot2.png' style="width:100%" >
 	</div>
         <p>
-<!-- 		blah blah blah -->
+		Here, we compare the performance v/s time of all the models used for rendering a dynamic scene. We can observe that the loss for
+		the mix model which incorporates the Single view depth + depth supervision converges faster when compared to other loss functions.
 <!--             Here, we show first results for novel view synthesis. We rendered 500 images of a minecraft room,
             and trained a single SRN with 500k parameters on this dataset. -->
         </p>
@@ -194,7 +195,8 @@
 	<img src='docs/NSFresults/Evaluation_Table.png' style="width:100%" >
 
         <p>
-<!-- 		blah blah blah -->
+		The LPIPS score for the mix model, which is the lowest, indicates a considerable improvement in the quality of
+		the rendered output, as shown in the above table, demonstrating how integrating depth truly enhances rendering performance. 
 <!--             Here, we show first results for inside-out novel view synthesis. We rendered 500 images of a minecraft room,
             and trained a single SRN with 500k parameters on this dataset. -->
         </p>
