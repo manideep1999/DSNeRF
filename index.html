@@ -91,8 +91,12 @@
 	
 	<h4> <center> 5 view input on Gopher Data </center> </h4>
 	    <div class='row vspace-top'>
-		<img src='docs/DSresults/Goldy_img.jpg' width="400" height="400" class="left">
+		<div class="col-sm-6">
+			<img src='docs/DSresults/Goldy_img.jpg' width="400" height="400" class="left">
+		</div>
+		<div class="col-sm-6">
 		<img src='docs/DSresults/Goldy_sparse_pts.png' width="400" height="400" class="right">
+		</div>
 		<p>
 		    
 		</p>
@@ -101,6 +105,11 @@
                      <source src="docs/DSresults/gopher_5v_rgb_1.mp4" type="video/mp4">
                 </video>
 		</div>
+	    </div>
+	    <div class="col-sm-6">
+                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                     <source src="docs/DSresults/gopher_5v_rgb_1.mp4" type="video/mp4">
+                </video>
 	    </div>
         <p>
             The above is the results on the Gopher data collected by team 1. Unlike basic NeRF, we use the sparse 3d points generated during the 
@@ -124,7 +133,7 @@
             by SRNs, and to the right, the ground-truth views. This model was trained on 50 2D observations each of ~2.5k cars in the Shapenet v2 dataset.
         </p>
 
-        <h2>Camera Pose Extrapolation</h2>
+<!--         <h2>Camera Pose Extrapolation</h2>
         <hr>
         <div class="gif">
             <video width="40%" playsinline="" autoplay="" loop="" preload="" muted="">
@@ -184,7 +193,7 @@
             Similar to the cars and chairs above, interpolation latent vectors yields smooth interpolation of the respective
             identities and expressions (left). Note that all movements are reflected in the normal map as well as the appearance.
         </p>
-
+ -->
         <h2>Performance Evaluation</h2>
         <hr>
         <div class="gif">
