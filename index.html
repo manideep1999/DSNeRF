@@ -138,6 +138,43 @@
 	    <p></p>
 	    <p></p>
 	    <p></p>
+	    <p></p>
+	    <p></p>
+	    <p></p>
+	    <p></p>
+	    <p></p>
+	    <p></p>
+	    <p></p>
+	    <p></p>
+	    <p></p>
+	    <p></p>
+	    <p></p>
+	    <p></p>
+	    <p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
 	<p></p>
         <p>
             The above is the results on the Gopher data collected by team 1. Unlike basic NeRF which just uses the input views, we also make use 
@@ -147,12 +184,39 @@
 	    
         <h2>Dynamic View Synthesis </h2>
         <hr>
-	<h4> <center> Monocular video input </center> </h4>
-        <div class="gif">
-            <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                <source src="docs/DSresults/gopher_5v_rgb_1.mp4" type="video/mp4">
-            </video>
-        </div>
+	<h4> <center> No depth loss </center> </h4>
+	<div class="column1">
+	<img src='docs/NSFresults/None_rgb.gif' style="width:100%" >
+	</div>
+	<div class="column1">
+	<img src='docs/NSFresults/None_dep.png' style="width:100%" >
+	</div>
+
+	<h4> <center> Depth loss only  </center> </h4>
+	<div class="column1">
+	<img src='docs/NSFresults/ds_rgb.gif' style="width:100%" >
+	</div>
+	<div class="column1">
+	<img src='docs/NSFresults/ds_dep.png' style="width:100%" >
+	</div>
+	    
+	    
+	<h4> <center> Single View Depth loss  </center> </h4>
+	<div class="column1">
+	<img src='docs/NSFresults/Mono_rgb.gif' style="width:100%" >
+	</div>
+	<div class="column1">
+	<img src='docs/NSFresults/Mono_dep.png' style="width:100%" >
+	</div>
+	    
+	    
+	<h4> <center> Mix (depth loss + single view depth)  </center> </h4>
+	<div class="column1">
+	<img src='docs/NSFresults/mix_rgb.gif' style="width:100%" >
+	</div>
+	<div class="column1">
+	<img src='docs/NSFresults/mix_dep.png' style="width:100%" >
+	</div>
         <p>
 	     blah blah blah
 <!--             SRNs explain all 2D observations in 3D, leading to unsupervised, yet explicit, reconstruction of geometry jointly with
