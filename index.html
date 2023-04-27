@@ -90,9 +90,20 @@
         </p>
 	
 	<h4> <center> 5 view input on Gopher Data </center> </h4>
-	<video width="80%" playsinline="" autoplay="" loop="" preload="" muted="" class="gif">
-            <source src="img/Single_shot_gif.mp4" type="video/mp4">
-        </video>
+	    <div class='row vspace-top'>
+		<img src='docs/DSresults/Goldy_img.jpg' width="500" height="400" class="left">
+		<img src='docs/DSresults/Goldy_sparse_pts.png' width="500" height="400" class="right">
+
+		<div class="col-sm-6">
+                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                     <source src="docs/DSresults/fortress_rgb.mp4" type="video/mp4">
+                </video>
+		</div>
+	    </div>
+        <p>
+            The above is the results on the Gopher data collected by team 1. Unlike basic NeRF, we use the sparse 3d points generated during the 
+	    COLMAP for the depth supervision. 
+        </p>
 	    
 	    
         <h2>Dynamic View Synthesis </h2>
