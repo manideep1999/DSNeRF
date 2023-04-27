@@ -124,6 +124,8 @@
                      <source src="docs/DSresults/gopher_5v_rgb_1.mp4" type="video/mp4" style="width:100%">
                 </video>
 	    </div>
+	    <p></p>
+	    <p></p>
         <p>
             The above is the results on the Gopher data collected by team 1. Unlike basic NeRF which just uses the input views, we also make use 
 	    of the sparse 3d points generated during the COLMAP run for calculating the depth supervision loss. 
@@ -146,56 +148,15 @@
             by SRNs, and to the right, the ground-truth views. This model was trained on 50 2D observations each of ~2.5k cars in the Shapenet v2 dataset.
         </p>
 
-<!--         <h2>Camera Pose Extrapolation</h2>
-        <hr>
-        <div class="gif">
-            <video width="40%" playsinline="" autoplay="" loop="" preload="" muted="">
-                <source src="img/zoom.mp4" type="video/mp4">
-            </video>
-            <video width="40%" playsinline=""  autoplay="" loop="" preload="" muted="">
-                <source src="img/camera_rotation.mp4" type="video/mp4">
-            </video>
-        </div>
-        <p>
-            SRNs generate images without using convolutional neural networks (CNNs) - pixels of a rendered image
-            are only connected via the 3D scene representation and can be generated completely independently.
-            SRNs can thus be sampled at arbitrary image
-            resolutions without retraining, and naturally generalize to completely unseen camera transformations. The model
-            that generated the images above was trained on cars, but only on views with a constant distance to
-            each car - yet, it flawlessly enables zoom and camera roll, though these transformations were entirely
-            unobserved at training time. In contrast, models with black-box neural renderers will fail entirely to
-            generate these novel views.
-        </p>
-        <h2>Instance Interpolation</h2>
-        <hr>
-        <div class="gif">
-            <video width="40%" playsinline=""  autoplay="" loop="" preload="" muted="">
-                <source src="img/car_interpolation.mp4" type="video/mp4">
-            </video>
-            <video width="40%" playsinline="" autoplay="" loop="" preload="" muted="">
-                <source src="img/chair_interpolation.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <h2>2 View-image Reconstruction</h2>
-        <hr>
-        <video width="80%" playsinline="" autoplay="" loop="" preload="" muted="" class="gif">
-            <source src="img/Single_shot_gif.mp4" type="video/mp4">
-        </video>
-        <p>
-            By generalizing SRNs over a class of scenes, they enable few-shot reconstruction of both shape and geometry
-            - a car, for instance, may be reconstructed from only a single observation, enabling almost perfectly
-            multi-view consistent novel view generation.
-        </p>
         <h2>Performace Evaluation</h2>
         <hr>
 
-	    <div class="column1">
-		<img src='docs/NSFresults/4cases_Plot1.png' style="width:100%" >
-	    </div>
-	    <div class="column1">
-		<img src='docs/NSFresults/4cases_Plot2.png' style="width:100%" >
-	    </div>
+	<div class="column1">
+	<img src='docs/NSFresults/4cases_Plot1.png' style="width:100%" >
+	</div>
+	<div class="column1">
+	<img src='docs/NSFresults/4cases_Plot2.png' style="width:100%" >
+	</div>
 
 	<p></p>
         <div class="gif">
