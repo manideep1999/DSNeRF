@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations">
-    <meta name="author" content="Vincent Sitzmann,
-                                 Michael Zollhöfer,
-				 Gordon Wetzstein">
+          content="Bringing Depth-supervision to Dynamic Neural Radiance Fields with Scene Flows">
+    <meta name="author" content="Claire Chen,
+				 Mani Deep Cherukuri">
 
-    <title>Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations</title>
+    <title>Bringing Depth-supervision to Dynamic Neural Radiance Fields with Scene Flows</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,38 +23,38 @@
 <div class="container">
 
     <div class="jumbotron">
-	    <h2>Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations</h2>
-	    <h2>NeurIPS 2019 (Oral, Honorable Mention "Outstanding New Directions")</h2>
-        <p class="abstract">An interpretable, data-efficient, and scalable neural scene representation.</p>
+	    <h2>Bringing Depth-supervision to Dynamic Neural Radiance Fields with Scene Flows</h2>
+<!-- 	    <h2>University of Minnesota</h2> -->
+        <p class="abstract">Minnesota Robotics Institute</p>
+       	<p class="abstract">University of Minnesota</p>
         <p iclass="authors">
-            <a href="http://stanford.edu/~sitzmann/">Vincent Sitzmann</a>,
+<!--             <a href="http://stanford.edu/~sitzmann/">Vincent Sitzmann</a>,
             <a href="http://zollhoefer.com/">Michael Zollhöfer</a>,
-            <a href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a>
+            <a href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a> -->
         </p>
 
         <p>
-            <a class="btn btn-primary" href="https://papers.nips.cc/paper/8396-scene-representation-networks-continuous-3d-structure-aware-neural-scene-representations">Paper</a>
-            <a class="btn btn-primary" href="https://github.com/vsitzmann/scene-representation-networks">Code</a>
+            <a class="btn btn-primary" href="https://arxiv.org/abs/2107.02791">DS Paper</a>
+            <a class="btn btn-primary" href="https://arxiv.org/abs/2011.13084">NSF Paper</a>
+	    <a class="btn btn-primary" href="https://google.com">Code</a>
             <a class="btn btn-primary" href="https://drive.google.com/drive/folders/1OkYgeRcIcLOFu1ft5mRODWNQaPJ0ps90?usp=sharing">Datasets</a>
-            <a class="btn btn-primary" href="https://drive.google.com/file/d/1dRDXJwl3Q10u625vNCTdfWFBLSPJPC6W/view?usp=sharing">Poster</a>
-            <a class="btn btn-primary" href="https://slideslive.com/38921749/track-1-session-3">Talk</a>
-            <a class="btn btn-primary" href="https://vsitzmann.github.io/srns/slides.pdf">Slides</a>
-            <a class="btn btn-primary" href="https://drive.google.com/open?id=1IdOywOSLuK6WlkO5_h-ykr3ubeY9eDig">Trained Models</a>
+            <a class="btn btn-primary" href="docs/poster.pdf">Poster</a>
+            <a class="btn btn-primary" href="https://drive.google.com/file/d/1KerkXYDJSgl0DOb3IRL3UqCeq3Z3vkqG/view">Talk</a>
+            <a class="btn btn-primary" href="https://rpm-lab.github.io/CSCI5980-Spr23-DeepRob/assets/slides/minn_deeprob_18_NeRF_variants.pdf">Slides</a>
+<!--             <a class="btn btn-primary" href="https://drive.google.com/open?id=1IdOywOSLuK6WlkO5_h-ykr3ubeY9eDig">Trained Models</a> -->
     </div>
 
     <h2>Paper Video</h2>
     <hr>
-    <iframe width="884" height="497" class='center' src="https://www.youtube.com/embed/6vMEBWD8O20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="884" height="497" class='center' src="https://drive.google.com/drive/u/0/folders/1Le3vRaMLD4A0aYsV8C5L2cB1YEax5m0a" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <hr>
     <p>
-        We propose Scene Representation Networks (SRNs), a continuous, 3D-structure-aware scene representation that
-        encodes both geometry and appearance. SRNs represent scenes as continuous functions that map world
-        coordinates to a feature representation of local scene properties. By formulating the image formation as a
-        neural, 3D-aware rendering algorithm, SRNs can be trained end-to-end from only 2D observations, without
-        access to depth or geometry. SRNs do not discretize space, smoothly parameterizing scene surfaces, and their
-        memory complexity does not scale directly with scene resolution. This formulation naturally generalizes
-        across scenes, learning powerful geometry and appearance priors in the process.
+	The objective of our work is to investigate the impact of depth-supervised loss on both training time and 
+	performance in generation of 3D realistic models using NeRF. While the Depth-supervised NeRF paper demonstrated
+	the effectiveness of depth-supervised loss in reducing training time for static scenes, our study aims to 
+	evaluate whether this approach can be applied to dynamic scenes. To achieve this goal, we incorporated the 
+	DS-loss into the Neural Scene Flow Fields model	and conducted experiments with different loss combinations.
     </p>
 
     <div class="section">
